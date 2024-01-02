@@ -1,0 +1,30 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Playwright Framework for Mixmax Assignment",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test:scenario1": "playwright test --workers=1 --grep @scenario1",
+    "test:scenario2": "playwright test --workers=1 --grep @scenario2",
+    "test:all": "playwright test --workers=2 --grep @all",
+    "show-trace": "playwright show-trace --"
+  },
+  "author": "Muhammad Tayyab Ansari",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "mailslurp-client": "^15.13.3",
+    "pdf.js-extract": "^0.2.1",
+    "typescript": "^4.9.5",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.8",
+    "playwright": "^1.40.1"
+  }
+}
